@@ -47,13 +47,13 @@ export default class Map extends Component {
           },
           location
         });
-      }, //sucesso
+      }, //success
       () => {
         Alert.alert(
           'Erro',
           'Não foi possivel buscar sua localização tente novamente.'
         );
-      }, //erro
+      }, //error
       {
         timeout: 5000,
         enableHighAccuracy: true,
